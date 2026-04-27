@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #F7F6F3;
+  --sidebar: #0F1117;
+  --text: #1A1A1A;
+  --text-muted: #6B6B6B;
+  --border: #E2E0DB;
+  --green: #00875A;
+  --red: #DE3730;
+  --amber: #B45309;
+  --white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'IBM Plex Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-mono {
+  font-family: 'IBM Plex Mono', monospace !important;
+}
+
+.font-serif {
+  font-family: 'DM Serif Display', serif !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease both;
+}
+
+.pulse-dot {
+  animation: pulse-dot 1.5s ease infinite;
+}
