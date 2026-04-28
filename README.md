@@ -6,6 +6,17 @@ Built as part of the Playto Founding Engineer Challenge 2026.
 
 ---
 
+## Live Demo
+
+- **Frontend:** https://playto-payout-frontend-7gpu.onrender.com
+- **Backend API:** https://playto-payout-production-7b6e.up.railway.app
+
+### Test Credentials
+Use one of these tokens from the seed data:
+- merchant_rahul: `89980e93cd4ea935627d9a4bdd58846bbb73d262`
+- merchant_priya: `0197e1d6f31de59f77f0216fa83175268dabd660`
+- merchant_devcraft: `356ab890846486ad48021eac3e76a1dd9be01148`
+
 ## Tech Stack
 
 | Layer | Technology |
