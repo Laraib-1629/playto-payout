@@ -33,13 +33,9 @@ Use one of these tokens from the seed data:
 
 ## Architecture
 
-```
-React Frontend → Django API → PostgreSQL
-                           ↓
-                    Redis (broker)
-                           ↓
-              Celery Worker + Celery Beat
-```
+## Architecture
+
+![Architecture](./architecture.svg)
 
 ---
 
