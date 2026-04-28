@@ -535,11 +535,15 @@ export default function App() {
       setLedger(led)
       if (banks.length > 0) setMerchantName(banks[0].account_holder_name)
       setError(null)
-    } catch {
+    } catch (err) {
+      // If 401 — token is invalid, log out
+      if (err.detail === 'Invalid token.') {
+        handleLogout()
+        return
+      }
       setError('Failed to load data. Check your token.')
     }
   }, [token])
-
   useEffect(() => {
     if (!token) return
     fetchAll()
